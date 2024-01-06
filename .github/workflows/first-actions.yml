@@ -30,8 +30,7 @@ jobs:
          ./script.sh
       shell: bash
     
-    # - name: Run tests
-    #   run: |
-    #     cd github-actions
-    #     chmod +x script.sh
-    #     python -m pytest script.sh
+    - name: Run tests
+      run: |
+        cd github-actions
+        python -m pytest script.py
