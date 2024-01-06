@@ -22,7 +22,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
-    - name: Run tests
+    - uses: actions/checkout@v2
+    - name: Run script file
       run: |
-        cd github-actions
-        python -m pytest script.py
+         cd github-actions
+         chmod +x ./test.sh
+         ./test.sh
+      shell: bash
+    
+    # - name: Run tests
+    #   run: |
+    #     cd github-actions
+    #     chmod +x script.sh
+    #     python -m pytest script.sh
