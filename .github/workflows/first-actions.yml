@@ -26,8 +26,8 @@ jobs:
     - name: Run script file
       run: |
          cd github-actions
-         chmod +x ./test.sh
-         ./test.sh
+         chmod +x ./script.sh
+         ./script.sh
       shell: bash
     
     # - name: Run tests
